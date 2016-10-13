@@ -1,25 +1,31 @@
 div {
-  border: 2px solid black;
-  width: 50%;
-  position: relative;
-  margin-left: 25%;
+  font-family: 'Arial';
+  background-color: #a8cf45;
+  margin: 10px 10px;
+  text-align: center;
+  font-weight: bolder;
+  padding: 15px 30px;
+  width: 80px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-// div::before {
-//   content: 'Hola';
-//   position: absolute;
-//   right: 0px;
-//   bottom: 0px;
-// }
-//
-// div::after {
-//   content: 'Mundo';
-// }
-
-div:hover {
-  background: #ccc;
+.triangulo_lateral {
+  transform: translateX(0);
 }
 
-a:focus {
-  color: pink;
+.triangulo_lateral::before {
+  content: '';
+  transition-duration: 0.3s;
+  border-style: solid;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent #a8cf45 transparent transparent;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  margin-top: -15px;
+}
+
+.triangulo_lateral:hover::before {
+  left: -14px;
 }
