@@ -16,7 +16,7 @@ div {
 
 .triangulo-lateral::before {
   content: '';
-  transition-duration: 0.3s;
+  transition-duration: .3s;
   border-style: solid;
   border-width: 15px 15px 15px 0;
   border-color: transparent #a8cf45 transparent transparent;
@@ -48,9 +48,29 @@ div {
 
 .triangulo-fijo:hover {
   transform: translateY(15px);
-  transition-duration: 0.3s;
+  transition-duration: .3s;
 }
 
 .triangulo-fijo:hover::before {
   top: -14px;
+}
+
+.esquina-pagina {
+  transform: translateX(0);
+}
+
+.esquina-pagina::before {
+  content: '';
+  width: 0;
+  height: 0;
+  background: linear-gradient(45deg, white 45%, #aaa 50%, #ccc 60%, white);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition-duration: .5s;
+}
+
+.esquina-pagina:hover::before {
+  width: 35px;
+  height: 35px;
 }
