@@ -123,4 +123,14 @@ div {
   opacity: 1;
 }
 
+.sombra-difuminada {
+  box-shadow: 0px 0px 1px black;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+.sombra-difuminada:hover {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+}
+
 /*# sourceMappingURL=efectos.css.map */
