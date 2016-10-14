@@ -142,3 +142,12 @@ div {
 .sombra-radial:hover::before, .sombra-radial:hover::after {
   opacity: 1;
 }
+
+.sombra-externa {
+  box-shadow: 0px 0px 3px black;
+  transition-duration: 0.3s;
+}
+
+.sombra-externa:hover {
+  box-shadow: 2px 3px 3px black;
+}
