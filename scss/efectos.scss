@@ -183,3 +183,44 @@ div {
   right: -8px;
   opacity: 1;
 }
+
+body {
+  background-color: rgb(63, 100, 157);
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+nav ul {
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+  margin: 7px 0px;
+}
+
+li a {
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+li:nth-of-type(1) a:focus {
+  border-bottom: 3px solid red;
+}
+
+li:nth-of-type(2) a:focus {
+  border-bottom: 3px solid green;
+}
+
+li:nth-of-type(3) a:focus {
+  border-bottom: 3px solid orange;
+}
