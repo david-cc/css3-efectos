@@ -151,3 +151,11 @@ div {
 .sombra-externa:hover {
   box-shadow: 2px 3px 3px black;
 }
+
+.sombra-interna {
+  transition-duration: 0.5s;
+}
+
+.sombra-interna:hover {
+  box-shadow: 2px 2px 4px black inset, -2px -2px 4px black inset;
+}

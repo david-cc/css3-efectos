@@ -175,4 +175,13 @@ div {
   box-shadow: 2px 3px 3px black;
 }
 
+.sombra-interna {
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+.sombra-interna:hover {
+  box-shadow: 2px 2px 4px black inset, -2px -2px 4px black inset;
+}
+
 /*# sourceMappingURL=efectos.css.map */
