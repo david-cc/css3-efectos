@@ -113,3 +113,32 @@ div {
 .sombra-difuminada:hover {
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
 }
+
+.sombra-radial {
+  position: relative;
+  box-shadow: 0px 0px 1px black;
+}
+
+.sombra-radial::before, .sombra-radial::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  left: 0px;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.sombra-radial::before {
+  background: radial-gradient(ellipse at 50% 150%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+  bottom: 100%;
+}
+
+.sombra-radial::after {
+  background: radial-gradient(ellipse at 50% -50%, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0) 80%);
+  top: 100%;
+}
+
+.sombra-radial:hover::before, .sombra-radial:hover::after {
+  opacity: 1;
+}
