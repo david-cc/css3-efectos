@@ -159,3 +159,25 @@ div {
 .sombra-interna:hover {
   box-shadow: 2px 2px 4px black inset, -2px -2px 4px black inset;
 }
+
+.expansion-borde {
+  position: relative;
+}
+
+.expansion-borde::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 3px solid #444;
+  transition-duration: .3s;
+}
+
+.expansion-borde:hover::before {
+  top: -8px;
+  bottom: -8px;
+  left: -8px;
+  right: -8px;
+}
