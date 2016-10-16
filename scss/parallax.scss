@@ -37,6 +37,11 @@ $bgimg-nb: 3;
   min-height: 400px;
 }
 
+.bgimg-3 {
+  background-image: url("../images/img_parallax3.jpg");
+  min-height: 400px;
+}
+
 .caption {
   text-align: center;
   width: 100%;
@@ -67,4 +72,15 @@ $bgimg-nb: 3;
   background-color: transparent;
   font-size: 25px;
   text-transform: uppercase;
+}
+
+.separator {
+  background: #333642;
+  padding: 50px 80px;
+}
+
+.separator p {
+  font-size: 16px;
+  text-align: justify;
+  color: #ddd;
 }
